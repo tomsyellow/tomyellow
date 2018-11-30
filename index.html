@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    /*<!--导航栏泽柱了body顶部-->*/
+    body{
+        padding-top: 50px;
+    }
+    .carousel img{
+        width: 100%;
+    }
+    .carousel-caption p{
+        margin-bottom: 20px;
+        font-size:20px;
+        line-height: 1.8;
+    }
+</style>
+<body>
+<!--jq必须在bookstrap前面-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">疯狂动物城</a>
+    </div>
+    <!--nav-links-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">简述</a>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="text-center">疯狂动物园</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">特点</a>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="text-center">动物1</a></li>
+                    <li><a href="" class="text-center">动物2</a></li>
+                    <li><a href="" class="text-center">动物3</a></li>
+                    <li><a href="" class="text-center">动物4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">关于</a>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="text-center">帮助</a></li>
+                    <li><a href="" class="text-center">客服电话</a></li>
+                    <li><a href="" class="text-center">咨询</a></li>
+                    <li><a href="" class="text-center">help</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!--indicators轮播组件-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+    </ol>
+    <!--幻灯片-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item">
+            <img src="img/5bfe6193N8ded5b6d.jpg" alt="" class="img-responsive">
+            <div class="carousel-caption">
+                <h1>疯狂动物园1</h1>
+                <p>欢迎来到疯狂动物园,这里有你喜欢的</p>
+            </div>
+        </div>
+        <div class="item active">
+            <img src="img/u=338278467,450822865&fm=26&gp=0.jpg" alt="" class="img-responsive">
+            <div class="carousel-caption">
+                <h1>疯狂动物园2</h1>
+                <p>来感受一下动物园的愉快与欢乐吧</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/u=1146245092,2627061976&fm=26&gp=0.jpg" alt="" class="img-responsive">
+            <div class="carousel-caption">
+                <h1>疯狂动物园3</h1>
+                <p>嘻嘻嘻,我是一个大傻子警官</p>
+            </div>
+        </div>
+    </div>
+    <!--轮播图-->
+    <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+        <span class="sr-only">上一页</span>
+    </a>
+    <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+        <span class="sr-only">下一页</span>
+    </a>
+</div>
+<script src="jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
